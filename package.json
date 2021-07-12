@@ -7,6 +7,7 @@
     "build": "webpack --config webpack.config.js",
     "start": "webpack serve --open",
     "test": "jest --env=jsdom",
+    "test-w": "jest --watch --env=jsdom",
     "test-coverage": "jest --coverage"
   },
   "repository": {
@@ -23,6 +24,9 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
+    "@juggle/resize-observer": "^3.3.1",
+    "@react-three/drei": "^7.0.6",
+    "@react-three/fiber": "^7.0.4",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/react-hooks": "^7.0.1",
@@ -46,6 +50,7 @@
     "react-test-renderer": "^17.0.2",
     "sass": "^1.35.1",
     "sass-loader": "^12.1.0",
+    "three": "^0.130.1",
     "webpack": "^5.42.1",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
