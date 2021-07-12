@@ -13,11 +13,15 @@ describe('Header testing', () => {
         wrapper = mount(<Header />);
     });
 
-    it('should render the title of the header', () => {
-        expect(wrapper.find('h1').text()).toContain("This is the header");
+    // it('should render the title of the header', () => {
+    //     expect(wrapper.find('h1').text()).toContain("This is the header");
 
-        // const { getByText } = render(<Header />);
-        // const linkElement = getByText("This is the header");
-        // expect(linkElement).toBeInTheDocument();
+    //     // const { getByText } = render(<Header />);
+    //     // const linkElement = getByText("This is the header");
+    //     // expect(linkElement).toBeInTheDocument();
+    // });
+
+    it('should contain Three component', () => {
+        expect(wrapper.find('Button')).toHaveLength(1);
     });
 });
