@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import { Canvas, useThree } from "@react-three/fiber";
 import { ResizeObserver } from "@juggle/resize-observer";
-import * as THREE from "three";
 import { TrackballControls } from "@react-three/drei";
+import * as THREE from "three";
 
 function MyMesh() {
     const geometry = new THREE.BoxGeometry(1, 1, 1);
