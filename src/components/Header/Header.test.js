@@ -24,4 +24,8 @@ describe('Header testing', () => {
     it('should contain Three component', () => {
         expect(wrapper.find('Button')).toHaveLength(1);
     });
+
+    it('should contain Three component', () => {
+        expect(wrapper.find('Modal')).toHaveLength(1);
+    });
 });
