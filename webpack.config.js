@@ -43,10 +43,7 @@ module.exports = {
         }, {
             test: /\.(png|jpe?g|gif|svg)$/,
             use: [{
-                loader: "file-loader",
-                options: {
-                    outputPath: 'images'
-                }
+                loader: "file-loader"
             }]
         }]
     },
@@ -57,6 +54,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html',
             inject: 'body'
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, './src/assets'), to: "./assets" }
+            ]
         })
     ]
 }
