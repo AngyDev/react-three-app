@@ -18,6 +18,6 @@ describe('Three testing', () => {
     // });
 
     it('should render the canvas of Three component', () => {
-        expect(wrapper.find('Canvas')).toHaveLength(1);
+        expect(wrapper.find('canvas')).toHaveLength(1);
     });
 });
